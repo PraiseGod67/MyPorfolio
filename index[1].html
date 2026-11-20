@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PraiseGod | Portfolio</title>
+  <meta name="description" content="Portfolio of PraiseGod: Scratch programming, Microsoft Word, Excel and PowerPoint.">
+
+  <!-- Fonts (free from Google) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ NAVIGATION BAR ============ -->
+  <header class="nav" id="top">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">PraiseGod</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="navLinks" class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#skills">My Skills</a>
+        <a href="#projects">My Projects</a>
+        <a href="#contact" class="nav-cta">Contact Me</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HOME ============ -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="hello">Hello, I’m</p>
+          <h1>PraiseGod</h1>
+          <p class="typed-line">I make <span id="typed" class="typed"></span><span class="cursor">|</span></p>
+          <p class="lead">
+            A motivated beginner building real skills and looking for remote opportunities.
+            Take a look at what I can do.
+          </p>
+          <div class="btn-row">
+            <a href="#projects" class="btn btn-primary">See my projects</a>
+            <a href="#contact" class="btn btn-ghost">Get in touch</a>
+          </div>
+        </div>
+
+        <!-- Scratch-style blocks (decoration) -->
+        <div class="blocks" aria-hidden="true">
+          <div class="block b-event">when 🏁 clicked</div>
+          <div class="block b-look">say “Hi, I’m PraiseGod!”</div>
+          <div class="block b-motion">learn something new</div>
+          <div class="block b-control">repeat until hired</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ME ============ -->
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <div class="avatar" aria-hidden="true">PG</div>
+        <div>
+          <h2>About me</h2>
+          <!-- EDIT: Write about yourself in your own words -->
+          <p>
+            I’m PraiseGod, a beginner who enjoys learning by building things. I started with Scratch,
+            where I learned to think step by step like a programmer, and I use Microsoft Word, Excel
+            and PowerPoint to organise information and present ideas clearly.
+          </p>
+          <p>
+            I’m preparing for remote work, so I’m practising reliable habits: finishing what I start,
+            communicating clearly and always learning the next skill.
+          </p>
+          <ul class="facts">
+            <li><strong>Goal</strong> Remote work</li>
+            <li><strong>Level</strong> Beginner, learning fast</li>
+            <li><strong>Based in</strong> Your city, country</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MY SKILLS ============ -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h2>My skills</h2>
+        <p class="section-sub">What I can do today, and what I’m growing into.</p>
+
+        <div class="grid skills-grid">
+          <!-- EDIT: change data-level (1 to 5) to change the dots -->
+          <article class="card skill reveal" data-level="3">
+            <div class="skill-icon scratch">S</div>
+            <h3>Scratch programming</h3>
+            <p>Animations, games and logic using blocks, loops and conditions.</p>
+            <div class="dots" aria-label="Level 3 of 5"></div>
+          </article>
+
+          <article class="card skill reveal" data-level="3">
+            <div class="skill-icon word">W</div>
+            <h3>Microsoft Word</h3>
+            <p>Neat, well-formatted letters, reports and documents.</p>
+            <div class="dots" aria-label="Level 3 of 5"></div>
+          </article>
+
+          <article class="card skill reveal" data-level="3">
+            <div class="skill-icon excel">X</div>
+            <h3>Microsoft Excel</h3>
+            <p>Tables, formulas and charts to organise and understand data.</p>
+            <div class="dots" aria-label="Level 3 of 5"></div>
+          </article>
+
+          <article class="card skill reveal" data-level="3">
+            <div class="skill-icon ppt">P</div>
+            <h3>Microsoft PowerPoint</h3>
+            <p>Clear, attractive slides that explain ideas simply.</p>
+            <div class="dots" aria-label="Level 3 of 5"></div>
+          </article>
+        </div>
+
+        <div class="learning">
+          <span>Currently learning:</span>
+          <!-- EDIT: add or remove tags -->
+          <em>HTML &amp; CSS</em>
+          <em>JavaScript</em>
+          <em>Remote teamwork tools</em>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MY PROJECTS ============ -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>My projects</h2>
+        <p class="section-sub">A few things I’ve made. Replace these with your own.</p>
+
+        <div class="grid projects-grid">
+          <!-- EDIT: change the title, text, tag and link of each project -->
+          <article class="card project reveal">
+            <div class="thumb t1">Scratch</div>
+            <div class="project-body">
+              <h3>My Scratch game</h3>
+              <p>Describe your game here: what it does and what you learned making it.</p>
+              <a href="#" class="link">View project</a>
+            </div>
+          </article>
+
+          <article class="card project reveal">
+            <div class="thumb t2">Excel</div>
+            <div class="project-body">
+              <h3>Budget tracker</h3>
+              <p>Describe your spreadsheet here: the formulas, charts or data you used.</p>
+              <a href="#" class="link">View project</a>
+            </div>
+          </article>
+
+          <article class="card project reveal">
+            <div class="thumb t3">PowerPoint</div>
+            <div class="project-body">
+              <h3>Presentation</h3>
+              <p>Describe your slides here: the topic and who they were made for.</p>
+              <a href="#" class="link">View project</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ME ============ -->
+    <section id="contact" class="section contact">
+      <div class="container contact-grid">
+        <div>
+          <h2>Contact me</h2>
+          <p>
+            Have a job, a task or a question? Send me a message and I’ll reply as soon as I can.
+          </p>
+          <!-- EDIT: put your real email in BOTH places (here and in script.js) -->
+          <p><a class="mail" href="mailto:aepraisegod@gmail.com">aepraisegod@gmail.com</a></p>
+        </div>
+
+        <form id="contactForm" class="form">
+          <label>Your name
+            <input type="text" id="name" required placeholder="Jane Doe">
+          </label>
+          <label>Your email
+            <input type="email" id="email" required placeholder="jane@email.com">
+          </label>
+          <label>Message
+            <textarea id="message" rows="5" required placeholder="Write your message here..."></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> PraiseGod. All rights reserved.</p>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
